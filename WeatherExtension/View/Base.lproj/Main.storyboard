@@ -57,6 +57,9 @@
                                 <state key="normal" image="hamburger_icon">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="updateWeatherInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMf-ug-yzf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="nyK-9n-PW4"/>
@@ -80,6 +83,12 @@
                             <constraint firstItem="tes-TY-vVG" firstAttribute="leading" secondItem="Aae-8A-ZX9" secondAttribute="leading" id="wSu-dk-l4b"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityLable" destination="cPe-5v-Zut" id="Ab2-7a-9SF"/>
+                        <outlet property="countryLabel" destination="ivr-XJ-rvh" id="vew-7U-PMc"/>
+                        <outlet property="temperatureLabel" destination="Td6-ir-6um" id="lsN-CT-DfI"/>
+                        <outlet property="weatherLabel" destination="nQe-ZC-myF" id="G76-jW-EIk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

@@ -58,13 +58,37 @@
 			children = (
 				FFFDA216271F62E2001E313C /* AppDelegate.swift */,
 				FFFDA218271F62E2001E313C /* SceneDelegate.swift */,
-				FFFDA21A271F62E2001E313C /* ViewController.swift */,
-				FFFDA21C271F62E2001E313C /* Main.storyboard */,
+				FFFDA22C271F643D001E313C /* Model */,
+				FFFDA22B271F6404001E313C /* View */,
+				FFFDA22A271F63EB001E313C /* Controller */,
 				FFFDA21F271F62E4001E313C /* Assets.xcassets */,
 				FFFDA221271F62E4001E313C /* LaunchScreen.storyboard */,
 				FFFDA224271F62E4001E313C /* Info.plist */,
 			);
 			path = WeatherExtension;
+			sourceTree = "<group>";
+		};
+		FFFDA22A271F63EB001E313C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FFFDA21A271F62E2001E313C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FFFDA22B271F6404001E313C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FFFDA21C271F62E2001E313C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFFDA22C271F643D001E313C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -22,9 +22,9 @@ class ViewController: UIViewController {
 
     @IBAction func updateWeatherInfo(_ sender: UIButton) {
 
+        performSegue(withIdentifier: "showLocations", sender: self)
     }
     
-   
     
 }
 

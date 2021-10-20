@@ -55,7 +55,8 @@ struct WeatherService {
         
         do{
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
-            let weatherName = decodedData.weather[0].value //fix?
+            let weatherName = decodedData.weather[0].description //fix?
+            print("made it in weather service")
             let temp = decodedData.main.temp
             
             let weather = WeatherModel(weatherCondition: weatherName, temperature: temp)
@@ -67,5 +68,4 @@ struct WeatherService {
             return nil;
         }
     }
-
 }

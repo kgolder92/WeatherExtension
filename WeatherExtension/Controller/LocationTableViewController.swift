@@ -7,8 +7,9 @@
 
 import UIKit
 
-class LocationTableViewController: UITableViewController {
 
+class LocationTableViewController: UITableViewController {
+    
     let locations = ["Paris, France", "Kyoto, Japan", "Sydney, Australia", "Seattle, U.S.", "New York, U.S.", "Hong Kong, Hong Kong", "Taipei, Taiwan", "London, U.K.", "Vancouver, Canada", "San Francisco, U.S."]
     
     var selectedLocation = "San Francisco, U.S."
@@ -28,7 +29,6 @@ class LocationTableViewController: UITableViewController {
         return locations.count
     }
     
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         
@@ -39,14 +39,12 @@ class LocationTableViewController: UITableViewController {
         return cell
     }
     
-    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let cell = tableView.cellForRow(at: indexPath)
         cell?.accessoryType = .checkmark
         if let location = cell?.textLabel?.text {
             selectedLocation = location
         }
-        
         tableView.reloadData()
     }
     

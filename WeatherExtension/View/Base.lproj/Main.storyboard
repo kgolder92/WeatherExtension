@@ -84,7 +84,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="cityLable" destination="cPe-5v-Zut" id="Ab2-7a-9SF"/>
+                        <outlet property="cityLabel" destination="cPe-5v-Zut" id="Ab2-7a-9SF"/>
                         <outlet property="countryLabel" destination="ivr-XJ-rvh" id="vew-7U-PMc"/>
                         <outlet property="temperatureLabel" destination="Td6-ir-6um" id="lsN-CT-DfI"/>
                         <outlet property="weatherLabel" destination="nQe-ZC-myF" id="G76-jW-EIk"/>
@@ -98,9 +98,7 @@
         <!--Location-->
         <scene sceneID="OWu-80-srt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XJe-RW-a2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="3Zo-Jv-PXa" userLabel="Exit" sceneMemberID="exit"/>
-                <tableViewController id="2Zl-Tj-NgL" customClass="LocationTableViewController" customModule="WeatherDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="2Zl-Tj-NgL" customClass="LocationTableViewController" customModule="WeatherExtension" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="zX4-zK-RzL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -133,6 +131,8 @@
                         </barButtonItem>
                     </navigationItem>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XJe-RW-a2x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="3Zo-Jv-PXa" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1622" y="115"/>
         </scene>

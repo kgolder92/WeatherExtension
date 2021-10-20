@@ -58,7 +58,7 @@
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="updateWeatherInfo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VMf-ug-yzf"/>
+                                    <segue destination="krR-JU-Hl1" kind="presentation" identifier="showLocations" id="XeS-Nh-GYE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -88,7 +88,6 @@
                         <outlet property="countryLabel" destination="ivr-XJ-rvh" id="vew-7U-PMc"/>
                         <outlet property="temperatureLabel" destination="Td6-ir-6um" id="lsN-CT-DfI"/>
                         <outlet property="weatherLabel" destination="nQe-ZC-myF" id="G76-jW-EIk"/>
-                        <segue destination="krR-JU-Hl1" kind="presentation" identifier="showLocations" id="QfI-dW-58Y"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -1,10 +1,9 @@
 # WeatherExtension
 
-<img alt="gif" src="https://github.com/kgolder92/WeatherExtension/blob/main/WeatherExtension.mp4" width="145" />
+##App Demo
 
 
 https://user-images.githubusercontent.com/25558568/138352632-b49cb11e-56f5-45f0-8016-bfb3d174ebde.mp4
-
 
 
 ## Description

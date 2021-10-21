@@ -38,7 +38,7 @@ class ViewController: UIViewController {
         
         weatherService.fetchWeather(cityName: city)
     }
-
+    
     @IBAction func updateWeatherInfo(_ segue: UIStoryboardSegue) {
         let sourceViewController = segue.source as! LocationTableViewController
         let selectedLocation = sourceViewController.selectedLocation.split { $0 == "," }.map { String($0) }
@@ -47,8 +47,6 @@ class ViewController: UIViewController {
         
         displayCurrentWeather()
     }
-    
-
     
     //MARK: - Navigation
     

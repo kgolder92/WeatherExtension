@@ -25,26 +25,21 @@ struct WeatherService {
     }
     
     func performRequest(with urlString: String) {
-        //create url
         if let url = URL(string: urlString) {
             
-            //create session
             let session = URLSession(configuration: .default)
             
-            //give the session a task
             let task = session.dataTask(with: url){ (data, response, error) in
                 if error != nil {
                     self.delegate?.didFailWithError(error: error!)
                     return
                 }
-                
                 if let safeData = data {
                     if let weather = self.parseJSON(safeData) {
                         self.delegate?.didUpdateWeather(self, weather: weather)
                     }
                 }
             }
-            //start the task
             task.resume()
         }
     }

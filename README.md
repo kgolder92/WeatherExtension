@@ -1,6 +1,6 @@
 # WeatherExtension
 
-##App Demo
+## App Demo
 
 
 https://user-images.githubusercontent.com/25558568/138352632-b49cb11e-56f5-45f0-8016-bfb3d174ebde.mp4

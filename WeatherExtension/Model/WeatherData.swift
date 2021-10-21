@@ -3,7 +3,8 @@
 //  WeatherExtension
 //
 //  Created by kayla golder on 10/20/21.
-// data from API
+//  Weather Data
+//  data from API to parse
 
 import Foundation
 

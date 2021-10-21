@@ -3,7 +3,6 @@
 //  WeatherExtension
 //
 //  Created by kayla golder on 10/20/21.
-//
 
 import Foundation
 

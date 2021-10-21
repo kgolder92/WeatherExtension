@@ -1,9 +1,10 @@
 //
-//  WeatherService.swift
-//  WeatherExtension
+// WeatherService.swift
+// WeatherExtension
 //
-//  Created by kayla golder on 10/20/21.
-//
+// Created by kayla golder on 10/20/21.
+// WeatherService -
+// Service fetching the weather data from Open Weather
 
 import Foundation
 

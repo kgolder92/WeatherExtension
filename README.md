@@ -1,5 +1,8 @@
 # WeatherExtension
 
+<img alt="gif" src="https://github.com/kgolder92/WeatherExtension/blob/main/WeatherExtension.mp4" width="145" />
+
+
 ## Description
 Weather App that fetches real weather data using the Open Weather API
 

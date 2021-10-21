@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        temperatureLabel.text = "60" + "\u{00B0}"
         weatherService.delegate = self
         
         displayCurrentWeather()
@@ -67,7 +67,7 @@ class ViewController: UIViewController {
 extension ViewController: WeatherManagerDelegate {
     func didUpdateWeather(_ weatherService: WeatherService, weather: WeatherModel) {
         DispatchQueue.main.async {
-            self.temperatureLabel.text = weather.temperatureString
+            self.temperatureLabel.text = weather.temperatureString + "\u{00B0}"
             self.weatherLabel.text = weather.weatherCondition
         }
     }

@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF667D7E2721016000D990D6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF667D7D2721016000D990D6 /* WidgetKit.framework */; };
+		FF667D802721016000D990D6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF667D7F2721016000D990D6 /* SwiftUI.framework */; };
+		FF667D832721016000D990D6 /* WeatherWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF667D822721016000D990D6 /* WeatherWidget.swift */; };
+		FF667D862721016100D990D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF667D852721016100D990D6 /* Assets.xcassets */; };
+		FF667D882721016100D990D6 /* Weather_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FF667D842721016000D990D6 /* Weather_Widget.intentdefinition */; };
+		FF667D892721016100D990D6 /* Weather_Widget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = FF667D842721016000D990D6 /* Weather_Widget.intentdefinition */; };
+		FF667D8C2721016100D990D6 /* Weather WidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF667D7B2721016000D990D6 /* Weather WidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FFA855FE27208A290099B879 /* WeatherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA855FD27208A290099B879 /* WeatherService.swift */; };
 		FFA856022720A5D10099B879 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA856012720A5D10099B879 /* WeatherModel.swift */; };
 		FFA856042720A5DD0099B879 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA856032720A5DD0099B879 /* WeatherData.swift */; };
@@ -19,7 +26,38 @@
 		FFFDA22E271FBD0E001E313C /* LocationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFDA22D271FBD0E001E313C /* LocationTableViewController.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FF667D8A2721016100D990D6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FFFDA20B271F62E2001E313C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF667D7A2721016000D990D6;
+			remoteInfo = "Weather WidgetExtension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF667D8D2721016100D990D6 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FF667D8C2721016100D990D6 /* Weather WidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FF667D7B2721016000D990D6 /* Weather WidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Weather WidgetExtension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF667D7D2721016000D990D6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		FF667D7F2721016000D990D6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		FF667D822721016000D990D6 /* WeatherWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherWidget.swift; sourceTree = "<group>"; };
+		FF667D842721016000D990D6 /* Weather_Widget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = Weather_Widget.intentdefinition; sourceTree = "<group>"; };
+		FF667D852721016100D990D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF667D872721016100D990D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFA855FD27208A290099B879 /* WeatherService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherService.swift; sourceTree = "<group>"; };
 		FFA856012720A5D10099B879 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
 		FFA856032720A5DD0099B879 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
@@ -35,6 +73,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF667D782721016000D990D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF667D802721016000D990D6 /* SwiftUI.framework in Frameworks */,
+				FF667D7E2721016000D990D6 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFFDA210271F62E2001E313C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -45,10 +92,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF667D7C2721016000D990D6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF667D7D2721016000D990D6 /* WidgetKit.framework */,
+				FF667D7F2721016000D990D6 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FF667D812721016000D990D6 /* Weather Widget */ = {
+			isa = PBXGroup;
+			children = (
+				FF667D822721016000D990D6 /* WeatherWidget.swift */,
+				FF667D842721016000D990D6 /* Weather_Widget.intentdefinition */,
+				FF667D852721016100D990D6 /* Assets.xcassets */,
+				FF667D872721016100D990D6 /* Info.plist */,
+			);
+			path = "Weather Widget";
+			sourceTree = "<group>";
+		};
 		FFFDA20A271F62E2001E313C = {
 			isa = PBXGroup;
 			children = (
 				FFFDA215271F62E2001E313C /* WeatherExtension */,
+				FF667D812721016000D990D6 /* Weather Widget */,
+				FF667D7C2721016000D990D6 /* Frameworks */,
 				FFFDA214271F62E2001E313C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				FFFDA213271F62E2001E313C /* WeatherExtension.app */,
+				FF667D7B2721016000D990D6 /* Weather WidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -106,6 +176,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF667D7A2721016000D990D6 /* Weather WidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF667D902721016100D990D6 /* Build configuration list for PBXNativeTarget "Weather WidgetExtension" */;
+			buildPhases = (
+				FF667D772721016000D990D6 /* Sources */,
+				FF667D782721016000D990D6 /* Frameworks */,
+				FF667D792721016000D990D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Weather WidgetExtension";
+			productName = "Weather WidgetExtension";
+			productReference = FF667D7B2721016000D990D6 /* Weather WidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		FFFDA212271F62E2001E313C /* WeatherExtension */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FFFDA227271F62E4001E313C /* Build configuration list for PBXNativeTarget "WeatherExtension" */;
@@ -113,10 +200,12 @@
 				FFFDA20F271F62E2001E313C /* Sources */,
 				FFFDA210271F62E2001E313C /* Frameworks */,
 				FFFDA211271F62E2001E313C /* Resources */,
+				FF667D8D2721016100D990D6 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF667D8B2721016100D990D6 /* PBXTargetDependency */,
 			);
 			name = WeatherExtension;
 			productName = WeatherExtension;
@@ -133,6 +222,9 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					FF667D7A2721016000D990D6 = {
+						CreatedOnToolsVersion = 13.0;
+					};
 					FFFDA212271F62E2001E313C = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -152,11 +244,20 @@
 			projectRoot = "";
 			targets = (
 				FFFDA212271F62E2001E313C /* WeatherExtension */,
+				FF667D7A2721016000D990D6 /* Weather WidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF667D792721016000D990D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF667D862721016100D990D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFFDA211271F62E2001E313C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -170,6 +271,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF667D772721016000D990D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF667D832721016000D990D6 /* WeatherWidget.swift in Sources */,
+				FF667D882721016100D990D6 /* Weather_Widget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FFFDA20F271F62E2001E313C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -177,6 +287,7 @@
 				FFA855FE27208A290099B879 /* WeatherService.swift in Sources */,
 				FFFDA22E271FBD0E001E313C /* LocationTableViewController.swift in Sources */,
 				FFA856042720A5DD0099B879 /* WeatherData.swift in Sources */,
+				FF667D892721016100D990D6 /* Weather_Widget.intentdefinition in Sources */,
 				FFFDA21B271F62E2001E313C /* ViewController.swift in Sources */,
 				FFFDA217271F62E2001E313C /* AppDelegate.swift in Sources */,
 				FFA856022720A5D10099B879 /* WeatherModel.swift in Sources */,
@@ -185,6 +296,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF667D8B2721016100D990D6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF667D7A2721016000D990D6 /* Weather WidgetExtension */;
+			targetProxy = FF667D8A2721016100D990D6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FFFDA21C271F62E2001E313C /* Main.storyboard */ = {
@@ -206,6 +325,60 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		FF667D8E2721016100D990D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35947CTM63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Weather Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Weather Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.golder.WeatherExtension.Weather-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF667D8F2721016100D990D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 35947CTM63;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Weather Widget/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "Weather Widget";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.golder.WeatherExtension.Weather-Widget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		FFFDA225271F62E4001E313C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -325,6 +498,7 @@
 		FFFDA228271F62E4001E313C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -353,6 +527,7 @@
 		FFFDA229271F62E4001E313C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -381,6 +556,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF667D902721016100D990D6 /* Build configuration list for PBXNativeTarget "Weather WidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF667D8E2721016100D990D6 /* Debug */,
+				FF667D8F2721016100D990D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FFFDA20E271F62E2001E313C /* Build configuration list for PBXProject "WeatherExtension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

@@ -14,7 +14,6 @@ protocol WeatherManagerDelegate {
 }
 
 struct WeatherService {
-//    let apiKey = "44178921fd5f00fcbc31a93644359d61"
     let weatherURL = "https://api.openweathermap.org/data/2.5/weather?&appid=44178921fd5f00fcbc31a93644359d61&units=imperial"
     
     var delegate: WeatherManagerDelegate?
@@ -55,8 +54,7 @@ struct WeatherService {
         
         do{
             let decodedData = try decoder.decode(WeatherData.self, from: weatherData)
-            let weatherName = decodedData.weather[0].description //fix?
-            print("made it in weather service")
+            let weatherName = decodedData.weather[0].description
             let temp = decodedData.main.temp
             
             let weather = WeatherModel(weatherCondition: weatherName, temperature: temp)
